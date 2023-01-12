@@ -15,5 +15,17 @@
 .login-pictures {
   display: flex;
   flex-direction: column;
-  margin-right: 20rem;
+  margin-right: 15rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.login-logo {
+  margin-left: 2rem;
+}
+
+.login-pablo {
+  padding-top: 7rem;
+  padding-right: 5rem;
+  margin-right: 3rem;
 }

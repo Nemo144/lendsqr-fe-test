@@ -7,11 +7,11 @@ const Login = () => {
     <div className="login">
       <div className="login-content">
         <div className="login-pictures">
-          <div>
+          <div className="login-logo">
             <img src={images.logo} alt="logo" />
           </div>
 
-          <div>
+          <div className="login-pablo">
             <img src={images.pablo} alt="pablo" />
           </div>
         </div>
