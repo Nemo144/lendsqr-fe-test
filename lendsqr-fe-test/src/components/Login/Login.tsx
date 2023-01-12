@@ -16,11 +16,11 @@ const Login = () => {
           </div>
         </div>
 
-        <div>
+        <div className="login-sign">
           <h1>Welcome!</h1>
           <p>Enter details to login</p>
-          <div>
-            <div>
+          <div className="login-input">
+            <div className="login-input1">
               <input type="email" placeholder="Email" name="email" value="" />
             </div>
 
