@@ -18,7 +18,7 @@ const Login = () => {
 
         <div className="login-sign">
           <h1>Welcome!</h1>
-          <p>Enter details to login</p>
+          <h4>Enter details to login</h4>
           <div className="login-input">
             <div className="login-input1">
               <input type="email" placeholder="Email" name="email" value="" />
