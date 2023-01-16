@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { images } from "../../constants";
 import "./login.scss";
 
 const Login = () => {
+  const [show, setShow] = useState({
+    password: "",
+    showPassword: false,
+  });
+
+  const handleClick = () => {
+    setShow({ ...show, showPassword: !show.showPassword });
+  };
+
+  const handlePasswordChange = (prop: any) => (event: any) => {
+    setShow({ ...show, [prop]: event.target.value });
+  };
+
   return (
     <div className="login">
       <div className="login-content">
@@ -26,12 +39,13 @@ const Login = () => {
 
             <div className="login-input2">
               <input
-                type="password"
+                type={show.showPassword ? "text" : "password"}
+                onChange={handlePasswordChange("password")}
                 placeholder="Password"
                 name="password"
-                value=""
+                value={show.password}
               />
-              <p>SHOW</p>
+              <p onClick={handleClick}>{show ? "SHOW" : ""}</p>
             </div>
           </div>
 
