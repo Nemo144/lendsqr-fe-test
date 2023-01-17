@@ -34,7 +34,7 @@ const Login = () => {
           <h4>Enter details to login</h4>
           <div className="login-input">
             <div className="login-input1">
-              <input type="email" placeholder="Email" name="email" value="" />
+              <input type="email" placeholder="Email" name="email" id="email" />
             </div>
 
             <div className="login-input2">
