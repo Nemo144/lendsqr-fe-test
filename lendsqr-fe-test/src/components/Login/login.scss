@@ -65,6 +65,16 @@
     background-color: rgb(19, 213, 152);
     border: none;
     border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+  h5 {
+    font-size: smaller;
+    font-weight: 300;
+
+    a {
+      margin-left: 0.4rem;
+    }
   }
 }
 
@@ -75,7 +85,7 @@
   input {
     width: 20rem;
     height: 2rem;
-    background-color: aliceblue;
+    // background-color: aliceblue;
   }
 }
 
@@ -87,6 +97,7 @@
   input {
     width: 20rem;
     height: 2rem;
+    // background-color: aliceblue;
   }
 
   p {

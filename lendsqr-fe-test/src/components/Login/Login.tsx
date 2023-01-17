@@ -52,6 +52,11 @@ const Login = () => {
           <p>Forgot Password?</p>
 
           <button type="button">LOG IN</button>
+
+          <h5>
+            Don't have an account yet?
+            <a href="/">click here to sign up</a>
+          </h5>
         </div>
       </div>
     </div>
