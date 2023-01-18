@@ -4,8 +4,8 @@ import { Login, SignUp } from "./components";
 const App = () => {
   return (
     <div>
-      {/* <SignUp /> */}
-      <Login />
+      <SignUp />
+      {/* <Login /> */}
     </div>
   );
 };
