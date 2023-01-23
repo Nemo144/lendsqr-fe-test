@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { images } from "../../constants";
+import { Link } from "react-router-dom";
 import "./login.scss";
 
 const Login = () => {
@@ -55,7 +56,7 @@ const Login = () => {
 
           <h5>
             Don't have an account yet?
-            <a href="/">click here to sign up</a>
+            <Link to="/signup">click here to sign up</Link>
           </h5>
         </div>
       </div>
