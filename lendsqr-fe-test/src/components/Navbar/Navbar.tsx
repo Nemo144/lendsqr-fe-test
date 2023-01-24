@@ -1,6 +1,6 @@
 import React from "react";
 import { images } from "../../constants";
-
+import { FcSearch } from "react-icons/fc";
 import "./navbar.scss";
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
           name="search"
           id="search"
         />
-        <p>🔍</p>
+        <FcSearch />
       </div>
 
       <div>
