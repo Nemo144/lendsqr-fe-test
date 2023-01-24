@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 5rem;
+  }
+}
+
+.nav-input {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+
+  input {
+    width: 20rem;
+    height: 2rem;
+  }
+
+  p {
+    width: 20rem;
+    height: 2rem;
+  }
+}

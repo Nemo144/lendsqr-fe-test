@@ -1,20 +1,23 @@
 import React from "react";
 import { images } from "../../constants";
 
+import "./navbar.scss";
+
 const Navbar = () => {
   return (
-    <div>
-      <div>
+    <div className="nav">
+      <div className="nav-logo">
         <img src={images.logo} alt="logo" />
       </div>
 
-      <div>
+      <div className="nav-input">
         <input
           type="search"
           placeholder="search for anything"
           name="search"
           id="search"
         />
+        <p>🔍</p>
       </div>
 
       <div>
