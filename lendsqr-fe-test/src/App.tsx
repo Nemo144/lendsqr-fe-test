@@ -5,6 +5,7 @@ import Routees from "./components/Routes";
 const App = () => {
   return (
     <div>
+      {/* <Login /> */}
       <Navbar />
       <Routees />
     </div>
