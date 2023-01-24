@@ -2,6 +2,9 @@ import React from "react";
 import { images } from "../../constants";
 import { FcSearch } from "react-icons/fc";
 import "./navbar.scss";
+import Login from "../Login/Login";
+import SignUp from "../Signup/SignUp";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -20,7 +23,17 @@ const Navbar = () => {
         <FcSearch />
       </div>
 
-      <div>
+      <div className="nav-links">
+        <button type="button">
+          <Link to="/login">Login</Link>
+        </button>
+
+        <button type="button">
+          <Link to="/signup">Signup</Link>
+        </button>
+      </div>
+
+      {/* <div>
         <a href="/">Docs</a>
       </div>
 
@@ -30,7 +43,7 @@ const Navbar = () => {
         <img src={images.avatar} alt="avatar" />
         <h5>adedeji</h5>
         <>˯</>
-      </div>
+      </div> */}
     </div>
   );
 };
