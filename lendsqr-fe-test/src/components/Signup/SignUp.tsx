@@ -8,17 +8,32 @@ const SignUp = () => {
     password: "",
     showPassword: false,
   });
+  // const [showHome, setShowHome] = useState(false) // this state will aid in routing to new page after successful signup
 
   const name = useRef<HTMLInputElement>(null);
   const email = useRef<HTMLInputElement>(null);
   const password = useRef<HTMLInputElement>(null);
+  // const localsignUp = localStorage.getItem("signUp");
+
+  // useEffect(() => {
+  //   if (localsignUp) {
+  //     setShowHome(true);
+  //   }
+  // }, []);
 
   const handleSubmit = () => {
-    console.log(
-      name?.current?.value,
-      email?.current?.value,
+    if (
+      name?.current?.value &&
+      email?.current?.value &&
       password?.current?.value
-    );
+    ) {
+      localStorage.setItem("name", name?.current?.value);
+      localStorage.setItem("email", email?.current?.value);
+      localStorage.setItem("password", password?.current?.value);
+      localStorage.setItem("signUp", email?.current?.value);
+      alert("account created successfully");
+      // window.location.reload();
+    }
   };
 
   const handleClick = () => {

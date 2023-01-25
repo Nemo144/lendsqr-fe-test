@@ -65,3 +65,16 @@ const Login = () => {
 };
 
 export default Login;
+
+// export const Logout = () => {
+//   const handleLogout = () => {
+//     localStorage.removeItem("signUp");
+//     window.location.reload();
+//   };
+
+//   return (
+//     <div>
+//       <button onClick={handleLogout}>Logout</button>
+//     </div>
+//   );
+// };
