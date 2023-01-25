@@ -13,6 +13,14 @@ const SignUp = () => {
   const email = useRef<HTMLInputElement>(null);
   const password = useRef<HTMLInputElement>(null);
 
+  const handleSubmit = () => {
+    console.log(
+      name?.current?.value,
+      email?.current?.value,
+      password?.current?.value
+    );
+  };
+
   const handleClick = () => {
     setShow({ ...show, showPassword: !show.showPassword });
   };
@@ -79,7 +87,9 @@ const SignUp = () => {
           <p>Forgot Password?</p>
         </div>
 
-        <button type="button">SIGN UP</button>
+        <button onClick={handleSubmit} type="button">
+          SIGN UP
+        </button>
         <h5>
           already have an account yet?
           <Link to="/login">click here to log in</Link>
