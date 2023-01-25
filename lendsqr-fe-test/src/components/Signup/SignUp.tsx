@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import "./signup.scss";
@@ -8,6 +8,10 @@ const SignUp = () => {
     password: "",
     showPassword: false,
   });
+
+  const name = useRef<HTMLInputElement>(null);
+  const email = useRef<HTMLInputElement>(null);
+  const password = useRef<HTMLInputElement>(null);
 
   const handleClick = () => {
     setShow({ ...show, showPassword: !show.showPassword });
@@ -23,13 +27,30 @@ const SignUp = () => {
         <h4>SIGN UP</h4>
 
         <div className="signup-input">
+          <div className="signup-name">
+            <input
+              type="text"
+              ref={name}
+              placeholder="Name"
+              name="name"
+              id="name"
+            />
+          </div>
+
           <div className="signup-email">
-            <input type="email" placeholder="Email" name="email" id="email" />
+            <input
+              type="email"
+              ref={email}
+              placeholder="Email"
+              name="email"
+              id="email"
+            />
           </div>
 
           <div className="signup-password">
             <input
               type={show.showPassword ? "text" : "password"}
+              ref={password}
               onChange={handlePasswordChange("password")}
               placeholder="Password"
               name="password"
