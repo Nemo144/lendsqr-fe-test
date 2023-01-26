@@ -20,7 +20,7 @@ const SignUp = () => {
     if (localsignUp) {
       setShowHome(true);
     }
-  }, []);
+  }, [localsignUp]);
 
   const handleSubmit = () => {
     if (

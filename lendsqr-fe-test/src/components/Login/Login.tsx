@@ -21,7 +21,7 @@ const Login = () => {
     if (localLogin) {
       setShowHome(true);
     }
-  }, []);
+  }, [localLogin]);
 
   const handleSubmit = () => {
     if (
