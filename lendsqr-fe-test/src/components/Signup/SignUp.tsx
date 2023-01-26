@@ -111,7 +111,7 @@ const SignUp = () => {
           </button>
           <h5>
             already have an account yet?
-            <Link to="/login">click here to log in</Link>
+            <Link to="/">click here to log in</Link>
           </h5>
         </div>
       )}
