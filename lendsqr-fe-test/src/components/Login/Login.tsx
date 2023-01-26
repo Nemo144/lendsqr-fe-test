@@ -15,9 +15,10 @@ const Login = () => {
   const password = useRef<HTMLInputElement>(null);
   const localEmail = localStorage.getItem("email");
   const localPassword = localStorage.getItem("password");
+  const localLogin = localStorage.getItem("logIn");
 
   useEffect(() => {
-    if (localEmail) {
+    if (localLogin) {
       setShowHome(true);
     }
   }, []);
@@ -29,7 +30,7 @@ const Login = () => {
     ) {
       localStorage.setItem("email", email?.current?.value);
       localStorage.setItem("password", password?.current?.value);
-      localStorage.setItem("signUp", email?.current?.value);
+      localStorage.setItem("logIn", email?.current?.value);
       window.location.reload();
     } else {
       alert("Please enter valid details");
