@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   const handleLogout = () => {
-    localStorage.removeItem("signUp");
+    localStorage.removeItem("signup");
     window.location.reload();
   };
   return (

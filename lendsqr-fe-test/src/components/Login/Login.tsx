@@ -27,6 +27,9 @@ const Login = () => {
       email?.current?.value === localEmail &&
       password?.current?.value === localPassword
     ) {
+      localStorage.setItem("email", email?.current?.value);
+      localStorage.setItem("password", password?.current?.value);
+      localStorage.setItem("signUp", email?.current?.value);
       window.location.reload();
     } else {
       alert("Please enter valid details");
