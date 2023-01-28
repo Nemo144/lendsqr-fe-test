@@ -1,6 +1,7 @@
 import React from "react";
 import { images } from "../../constants";
 import { FcSearch } from "react-icons/fc";
+import { RiArrowDownSFill } from "react-icons/ri";
 import "./navbar.scss";
 import Login from "../Login/Login";
 import SignUp from "../Signup/SignUp";
@@ -23,7 +24,7 @@ const Navbar = () => {
         <FcSearch />
       </div>
 
-      <div className="nav-links">
+      {/* <div className="nav-links">
         <button type="button">
           <Link to="/login">Login</Link>
         </button>
@@ -31,19 +32,19 @@ const Navbar = () => {
         <button type="button">
           <Link to="/signup">Signup</Link>
         </button>
-      </div>
-
-      {/* <div>
-        <a href="/">Docs</a>
-      </div>
-
-      <div>🔔</div>
-
-      <div>
-        <img src={images.avatar} alt="avatar" />
-        <h5>adedeji</h5>
-        <>˯</>
       </div> */}
+
+      <div className="nav-others">
+        <a href="/">Docs</a>
+
+        <p>🔔</p>
+
+        <img src={images.avatar} alt="avatar" />
+
+        <h5>Adedeji</h5>
+
+        <RiArrowDownSFill />
+      </div>
     </div>
   );
 };

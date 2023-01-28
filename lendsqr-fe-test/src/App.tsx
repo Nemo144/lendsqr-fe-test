@@ -6,8 +6,8 @@ const App = () => {
   return (
     <div>
       {/* <Login /> */}
-      {/* <Navbar /> */}
-      <Routees />
+      <Navbar />
+      {/* <Routees /> */}
     </div>
   );
 };
