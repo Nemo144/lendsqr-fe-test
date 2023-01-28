@@ -24,16 +24,6 @@ const Navbar = () => {
         <FcSearch />
       </div>
 
-      {/* <div className="nav-links">
-        <button type="button">
-          <Link to="/login">Login</Link>
-        </button>
-
-        <button type="button">
-          <Link to="/signup">Signup</Link>
-        </button>
-      </div> */}
-
       <div className="nav-others">
         <a href="/">Docs</a>
 
