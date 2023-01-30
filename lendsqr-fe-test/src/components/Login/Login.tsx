@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { images } from "../../constants";
 import { Link } from "react-router-dom";
 import "./login.scss";
-import Home from "../Home/Home";
+import Dashboard from "../Dashboard/Dashboard";
 
 const Login = () => {
   const [show, setShow] = useState({
@@ -48,7 +48,7 @@ const Login = () => {
   return (
     <div className="login">
       {showHome ? (
-        <Home />
+        <Dashboard />
       ) : (
         <div className="login-content">
           <div className="login-pictures">

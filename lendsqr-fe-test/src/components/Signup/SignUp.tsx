@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Home from "../Home/Home";
+import Dashboard from "../Dashboard/Dashboard";
 
 import "./signup.scss";
 
@@ -47,7 +47,7 @@ const SignUp = () => {
   return (
     <div className="signup">
       {showHome ? (
-        <Home />
+        <Dashboard />
       ) : (
         <div className="signup-content">
           <h1>Welcome!</h1>
