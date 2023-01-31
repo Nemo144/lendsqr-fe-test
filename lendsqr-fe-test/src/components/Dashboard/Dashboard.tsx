@@ -9,7 +9,7 @@ const Dashboard = () => {
   };
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <button onClick={handleLogout}>Logout</button>
     </div>
   );
