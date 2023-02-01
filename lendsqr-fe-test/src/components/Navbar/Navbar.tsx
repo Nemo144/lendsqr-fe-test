@@ -3,6 +3,7 @@ import { images } from "../../constants";
 import { FcSearch } from "react-icons/fc";
 import { RiArrowDownSFill } from "react-icons/ri";
 import "./navbar.scss";
+import Dashboard from "../Dashboard/Dashboard";
 
 const Navbar = () => {
   return (
@@ -10,7 +11,6 @@ const Navbar = () => {
       <div className="nav-logo">
         <img src={images.logo} alt="logo" />
       </div>
-
       <div className="nav-input">
         <input
           type="search"
