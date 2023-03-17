@@ -5,7 +5,6 @@ import Routees from "./components/Routes";
 const App = () => {
   return (
     <div>
-      <Navbar />
       <Routees />
     </div>
   );

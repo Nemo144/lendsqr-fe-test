@@ -5,7 +5,7 @@ import { RiArrowDownSFill } from "react-icons/ri";
 import "./navbar.scss";
 import Dashboard from "../Dashboard/Dashboard";
 
-const Navbar = () => {
+const Navbar = ({ onLogout }: any) => {
   return (
     <div className="nav">
       <div className="nav-logo">
@@ -26,7 +26,7 @@ const Navbar = () => {
 
         <p>🔔</p>
 
-        <img src={images.avatar} alt="avatar" />
+        {/* <img src={images.avatar} alt="avatar" /> */}
 
         <h5>Adedeji</h5>
 
