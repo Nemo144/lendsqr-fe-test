@@ -3,9 +3,8 @@ import { images } from "../../constants";
 import { FcSearch } from "react-icons/fc";
 import { RiArrowDownSFill } from "react-icons/ri";
 import "./navbar.scss";
-import Dashboard from "../Dashboard/Dashboard";
 
-const Navbar = ({ onLogout }: any) => {
+const Navbar = () => {
   return (
     <div className="nav">
       <div className="nav-logo">
