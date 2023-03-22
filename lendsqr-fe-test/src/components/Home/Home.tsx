@@ -1,6 +1,6 @@
 import React from "react";
 import Login from "../Login/Login";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../Dashboard/Dashboard";
 
 const Home = () => {
   const handleLogout = () => {
@@ -10,7 +10,6 @@ const Home = () => {
   };
   return (
     <div>
-      <Navbar />
       <button onClick={handleLogout}>Logout</button>
     </div>
   );
