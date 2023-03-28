@@ -37,11 +37,13 @@ const Login = () => {
     }
   };
 
-  const handleClick = () => {
+  const handleClick = (prop: any) => (event: any) => {
+    event?.preventDefault();
     setShow({ ...show, showPassword: !show.showPassword });
   };
 
   const handlePasswordChange = (prop: any) => (event: any) => {
+    event.preventDefault();
     setShow({ ...show, [prop]: event.target.value });
   };
 
